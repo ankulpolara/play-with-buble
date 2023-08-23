@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Buble Game</title>
+
+</head>
+
+<body class="relative ">
+    <div class="main bg-green-300 w-screen h-screen flex justify-center items-center">
+        <!-- GAME-CONTAINER  -->
+        <div class=" mt-5 md:mt-0 game-container w-[93%] md:w-[80%] md:h-[85%] h-[90%] bg-white rounded-lg shadow-2xl overflow-hidden">
+            <!-- TOP-OF GAME  -->
+            <div class="top  w-full md:text-[17px] text-[11px] bg-blue-300 h-[80px] flex justify-evenly  items-center gap-3">
+                <!-- here is hit ,timer and , score  -->
+
+                <div class=" flex gap-2 font-bold align-baseline">
+                    <h3>Target</h3>
+                    <div id="hit" class="p-1 px-4 scale-105 select-none  bg-white rounded-md"></div>
+                </div>
+
+                <div class=" flex gap-2 font-bold select-none">
+                    <h3>Timer</h3>
+                    <div id="timer"  class=" text-red-400 p-1 px-4  bg-white rounded-md animate-bounce duration-900"></div>
+                </div>
+
+                <div class=" flex gap-2 font-bold select-none">
+                    <h3>Score</h3>
+                    <div id="score" class="p-1 px-4 text-green-500  bg-white rounded-md"></div>
+                </div>
+
+            </div>
+
+            <div>
+                <!-- HERE IS FOOTERE  -->
+                <div id="footer" class="footer   md:pt-6 pt-3 w-full  flex flex-wrap justify-center md:gap-2.5 gap-[9px] font-bold  text-white p-2 md:p-4 ">
+
+
+                    
+                </div>   
+                       
+                </div>
+            </div>
+        </div>
+        <!-- restart game button  -->
+        <button class="restart-game absolute top-3 right-2 md:top-16  md:right-8 bg-blue-300 hover:bg-blue-400 md:px-6 md:py-1.5 py-0.5 px-3 rounded-lg hover:scale-110 duration-700 shadow-lg font-bold"> Restart</button>
+
+        <div>
+            <div class="  absolute left-2 top-3 md:top-16  md:left-2 bg-yellow-300 hover:bg-yellow-400 md:px-6 md:py-1.5 py-0.5 px-3 rounded-lg  duration-700 shadow-lg font-bold">Attempt <span id="span"></span></div>
+        </div>
+        <!-- <div>
+            <div id = 'asd' class=" hint-div absolute top-3 left-[43%] md:top-32  md:left-2 bg-yellow-300 hover:bg-yellow-400 md:px-6 md:py-1.5 py-0.5 px-3  rounded-lg hover:scale-110 duration-700 shadow-lg font-bold">Hint <span class="hint"></span></div>
+        </div> -->
+    </div>
+    
+    <script src="index.js"></script>
+
+</body>
+ <footer>
+    <audio autoplay loop>
+        <source src="Damtaro.mp3" type="audio/mp3">
+
+      </audio>
+ </footer>
+</html>
